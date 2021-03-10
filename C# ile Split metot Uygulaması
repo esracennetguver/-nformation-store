@@ -1,0 +1,27 @@
+           
+           
+            string sentence = "My name is Esra";
+            int kelimesayisi = 0;
+            for (int i = 0; i < newSentence.Length; i++)
+            {
+                if (sentence[i] == ' ')
+                    kelimesayisi++;
+            }
+            kelimesayisi += 1;
+            Console.WriteLine(kelimesayisi);
+
+            string[] dizi = new string[kelimesayisi];
+            int sayac = 0;
+            for (int i = 0; i < sentence.Length; i++)
+            {
+                if (sencente[i] != ' ')
+                {
+                    dizi[sayac] += sencente[i];
+                }
+                else
+                    sayac++;
+            }
+            foreach (var kelime in dizi)
+            {
+                Console.WriteLine(kelime);
+            }
