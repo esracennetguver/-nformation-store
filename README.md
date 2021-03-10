@@ -1,4 +1,4 @@
-# -nformation-store
+# C# Dizi Uygulaması
 C# ile 0-9 arasında rastgele 100 elemanlı bir dizi oluşur ve dizide bulunan elemanların kaç kere tekrarlandığını yazdır.
 
             int[] dizi = new int[100];
