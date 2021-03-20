@@ -1,0 +1,36 @@
+
+
+
+            bool tekrarGirisGerekliMi = true;
+            while (tekrarGirisGerekliMi)
+            {
+                string tKarakterler = "ıüşğö";
+                Console.WriteLine("parolanızı giriniz.");
+                string parola = Console.ReadLine().Trim();
+                tekrarGirisGerekliMi = false;
+
+
+                if (parola == "" && parola == null)
+                {
+                    Console.WriteLine("Parola boş bırakılamaz");
+                    tekrarGirisGerekliMi = true;
+                }
+                else if (parola.Length < 3 || parola.Length > 8)
+                    Console.WriteLine("parola 3 ile8 karakter olmalı.");
+                else
+                {
+                    for (int i = 0; i < parola.Length; i++)
+                    {
+                        if (tKarakterler.Contains(parola[i]))
+                        {
+                            Console.WriteLine("parolada türkçe karakter olamaz");
+                            tekrarGirisGerekliMi = true;
+                            break;
+                        }
+                    }
+                }
+            }
+            Console.WriteLine("Geçerli parola girdini.");
+
+            Console.ReadKey();
+        }
