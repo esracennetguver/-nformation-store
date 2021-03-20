@@ -1,0 +1,10 @@
+            string cumle = "kirsehir ahi evran universitesi";
+            string yeniCumle="";
+            for (int i = 0; i < cumle.Length; i++)
+            {
+                if (cumle[i] >= 97 && cumle[i] <= 122)
+                    yeniCumle += (char)(cumle[i] - 32);
+                else
+                    yeniCumle += cumle[i];
+            }
+            Console.WriteLine(yeniCumle);
